@@ -145,21 +145,22 @@ span.f_Heading1 { color: black; }
 <!--ZOOMRESTART-->
 <p style="text-indent: 20px;">Одним из основных этапов подготовки входных данных программы планирования является<span style="font-weight: bold; color: #000080;"> оконтуривание </span>зон интереса на томограмме пациента.</p>
 <p>&nbsp;</p>
-<p style="text-indent: 19px;">В процессе этого этапа специально обученный медицинский персонал определяет и оконтуривает опухоль, связанные с ней объёмы </p>
-<p style="text-indent: 19px;"> <span style="font-weight: bold; color: #000080;">GTV, CTV, PTV, TV, IV</span> и органы риска (<span style="font-weight: bold; color: #000080;">OAR</span>), внешний контур томограммы, вычисляет отступы для <span style="font-weight: bold; color: #000080;">CTV/PTV</span>, </p>
-<p style="text-indent: 19px;">необходимые для эффективного облучения опухоли.</p>
-<p style="text-indent: 16px;">Лечащий врач выписывает предписание на облучение, в котором указывается число фракций и требуемую дозу облучения.</p>
-<p style="text-indent: 21px;">&nbsp;</p>
+<p style="text-indent: 19px;">В процессе этого этапа специально обученный медицинский персонал определяет и оконтуривает опухоль, связанные с ней объёмы <span style="font-weight: bold; color: #000080;">GTV, CTV, PTV, TV, IV</span> и органы риска (<span style="font-weight: bold; color: #000080;">OAR</span>), внешний контур томограммы, &nbsp;вычисляет отступы для <span style="font-weight: bold; color: #000080;">CTV/PTV</span>, &nbsp;необходимые для эффективного облучения опухоли.</p>
+<p>&nbsp;</p>
+<p style="text-indent: 16px;">Лечащий врач выписывает предписание на облучение, в котором указывается число фракций, требуемую дозу облучения.</p>
 <p style="text-indent: 17px;">Все эти данные поступают на вход программы планирования.</p>
 <p>&nbsp;</p>
-<p style="text-indent: 17px;">Существует несколько коммерческих, сертифицированных программ, которые позволяют производить оконтуривание томограмм, такие как: </p>
+<p style="text-indent: 17px;">Существует несколько коммерческих, сертифицированных программ, которые позволяют производить </p>
+<p style="text-indent: 17px;">оконтуривание томограмм, такие как: </p>
+<p style="text-indent: 17px;">&nbsp;</p>
 <p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 23px;"><span style="font-size:16px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Focal, XiO (Electa)</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 23px;"><span style="font-size:16px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Eclipse (Varian)</p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 23px;"><span style="font-size:16px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Pinnacle (Philips)</p><p style="text-indent: 23px;">и другие.</p>
 <p style="text-indent: 23px;">&nbsp;</p>
 <p style="text-indent: 18px;">Все коммерческие программы в качестве входных, выходных данных используют файлы в стандарте <a href="dicom_rt.htm" class="topiclink">DICOM</a>,</p>
-<p style="text-indent: 18px;">поэтому для передачи данных со встроенного томографа (<a href="datfile.htm" class="topiclink">DAT файл</a>) на вход программы оконтуривания используется программа <span style="font-weight: bold; color: #000080;">db2dcm.exe</span>, </p>
-<p style="text-indent: 18px;">которая на основе <a href="datfile.htm" class="topiclink">DAT файла</a> создаёт <a href="dicom_rt.htm" class="topiclink">DICOM</a> томограмму.</p>
+<p style="text-indent: 18px;">поэтому для передачи данных со встроенного томографа (<a href="datfile.htm" class="topiclink">DAT файл</a>) на вход программы оконтуривания </p>
+<p style="text-indent: 18px;">используется программа <span style="font-weight: bold; color: #000080;">db2dcm.exe</span>, &nbsp;которая на основе <a href="datfile.htm" class="topiclink">DAT файла</a> создаёт <a href="dicom_rt.htm" class="topiclink">DICOM</a> томограмму.</p>
 <p>&nbsp;</p>
-<p style="text-indent: 18px;">В большинстве коммерческих томографах, томограмма снимается при лежачем положении (на спине) пациента, начиная с головы (<span style="font-weight: bold; color: #000080;">HFS</span>).</p>
+<p style="text-indent: 18px;">В большинстве коммерческих томографах, томограмма снимается при лежачем положении (на спине) пациента, </p>
+<p style="text-indent: 18px;">начиная с головы (<span style="font-weight: bold; color: #000080;">HFS</span>).</p>
 <p style="text-indent: 18px;">&nbsp;</p>
 <p style="text-indent: 17px;">Для имитации такого положения пациента, программа <span style="font-weight: bold; color: #000080;">db2dcm.exe </span>поворачивает<span style="font-weight: bold; color: #000080;"> </span><a href="datfile.htm" class="topiclink">DAT </a>томограмму на 90 градусов и </p>
 <p style="text-indent: 17px;">зеркально отражает в вертикальном направлении в <a href="geometry.htm" class="topiclink">аксиальной плоскости</a>.</p>

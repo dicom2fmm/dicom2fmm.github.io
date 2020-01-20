@@ -143,22 +143,23 @@ span.f_Heading1 { color: black; }
 
 <div id="idcontent"><div id="innerdiv"> 
 <!--ZOOMRESTART-->
-<p>База данных пациентов находится на удаленном сервере.</p>
+<p style="text-indent: 10px;">База данных пациентов находится на удаленном сервере.</p>
 <p>На сервере должна быть организована папка с общим доступом и названием<span style="font-weight: bold; color: #000080;"> BasePTC</span>. </p>
 <p>Доступ к этой папке должен быть прописан в сетевых подключениях на клиентских компьютерах под буквой <span style="font-weight: bold; color: #000080;">P:</span><br />
-<span style="font-weight: bold; color: #000080;">\\имя сервера\BasePTC</span> или<span style="font-weight: bold; color: #000080;"> \\сетевой адрес сервера\BasePTC,</span> <br />
-например,<span style="font-weight: bold; color: #000080;"> \\192.168.1.24\BasePTC</span>.</p>
+<span style="font-weight: bold; color: #000080;">\\имя сервера\BasePTC</span> или<span style="font-weight: bold; color: #000080;"> \\сетевой адрес сервера\BasePTC,</span> &nbsp;например,<span style="font-weight: bold; color: #000080;"> \\192.168.1.24\BasePTC</span>.</p>
 <p>&nbsp;</p>
-<p>В папке <span style="font-weight: bold; color: #000080;">BasePTC</span> обязательно присутствует база данных с наименованием <span style="font-weight: bold; color: #000080;"> BasePTC.mdb,  </span><br />
-а также папка с наименованием <span style="font-weight: bold; color: #000080;">P_DATA.</span></p>
+<p style="text-indent: 11px;">В папке <span style="font-weight: bold; color: #000080;">BasePTC</span> обязательно присутствует база данных с наименованием <span style="font-weight: bold; color: #000080;"> BasePTC.mdb,  </span>а также папка с наименованием <span style="font-weight: bold; color: #000080;">P_DATA.</span></p>
 <p>&nbsp;</p>
-<p>В базе данных хранятся все сведения о пациенте, о процессе лечения, а также ссылки на физические объекты, такие, как томограммы (отснятые на установке и сторонние), объекты DICOM-RT (томограммы с оконтуренными зонами облучения), созданные планы облучения, файлы с историей процесса лечения, фотографии пациента. </p>
+<p style="text-indent: 10px;">В базе данных хранятся все сведения о пациенте, о процессе лечения, а также ссылки на физические объекты, </p>
+<p>такие, как томограммы (отснятые на установке и сторонние), объекты DICOM-RT (томограммы с оконтуренными зонами облучения), </p>
+<p>созданные планы облучения, файлы с историей процесса лечения, фотографии пациента.</p>
+<p>&nbsp;</p>
 <p>Физически все эти объекты располагаются в личной папке пациента по пути<span style="font-weight: bold; color: #000080;"> P:\P_DATA\ФИО_ID.</span> </p>
 <p>&nbsp;</p>
-<p>Здесь <span style="font-weight: bold; color: #000080;">ФИО</span> – фамилия, имя, отчество пациента подряд без пробелов, </p>
-<p><span style="font-weight: bold; color: #000080;">ID</span> – идентификационный номер пациента в базе данных. </p>
+<p>Здесь <span style="font-weight: bold; color: #000080;">ФИО</span> – фамилия, имя, отчество пациента подряд без пробелов, <span style="font-weight: bold; color: #000080;">ID</span> – идентификационный номер пациента в базе данных. </p>
 <p>&nbsp;<br />
-Пример: <span style="font-weight: bold; color: #000080;">P:\P_DATA\СертификатовФантомФантомович_302</span>. <br />
+Пример: <span style="font-weight: bold; color: #000080;">P:\P_DATA\СертификатовФантомФантомович_302</span></p>
+<p>&nbsp;<br />
 Папка и все необходимые подпапки создаются программой <span style="font-weight: bold; color: #000080;">«Рабочее место медицинского физика» </span></p>
 <p>автоматически при регистрации пациента.</p>
 <p>&nbsp;</p>
