@@ -4,15 +4,12 @@
 <head>
 <title>&nbsp;</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--[if lt IE 9]>
-<style type="text/css">
-   html {overflow: hidden;}
-</style>
-<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="helpman_settings.js"></script>
 <script type="text/javascript" src="helpman_navigation.js"></script>
 <script type="text/javascript">
+<!--
 var defaulttopic="basicinfo.htm";
 if (location.href.lastIndexOf("?") > 0) defaulttopic=location.href.substring(location.href.lastIndexOf("?")+1,location.href.length).replace(/:/g,"");
 document.write('<frameset cols="30%,*" frameborder="1" framespacing="1">');
@@ -22,6 +19,7 @@ else {
   document.write('<frame name="hmnavigation" src="dicom2fmm_content.htm" title="Navigation frame">'); }
 document.write('<frame name="hmcontent" src="' + defaulttopic + '" title="Content frame">');
 document.write('</frameset>');
+//-->
 </script>
 </head>
 <noscript>
@@ -34,6 +32,4 @@ document.write('</frameset>');
   </frameset>
 </noscript>
 </html>
-
-
 
